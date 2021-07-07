@@ -22,6 +22,6 @@ This person did a forecast of temperature. We are going to use the countries ind
 ## [Sample 2](https://www.kaggle.com/gatandubuc/forecast-with-n-beats-interpretable-model)
 This person also did a forecast of temperature. We are going to use neural networks to make more accurate forecasts of global warming.
 ## Proposed Model/Algorithm
-We will combine 2 datasets. One for indicator of countries, other one for temperature change. 
+Our aim is to combine the 2 datasets mentioned above...
 
 ## Diagram: coming soon...
