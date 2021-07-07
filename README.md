@@ -10,10 +10,10 @@ https://www.kaggle.com/ploverbrown/world-bank-indicators-collection
 https://www.kaggle.com/sevgisarac/temperature-change
 
 ## (Explanation of Data: Include subject, size, variables ect...)
-# Dataset 1 
+### Dataset 1 
 -Subject: Dataset with indicators of world countries.
 
-# Dataset 2
+### Dataset 2
 -Subject: Temperature change of different countries
 
 ## (Importance of data: Include the goal of the project and its real world aplications).
@@ -22,15 +22,12 @@ https://www.kaggle.com/sevgisarac/temperature-change
 - Economic Growth
 - Trade
 - Poverty
-## Benchmark
-## (Explain any similar projects that already exist, as well as ways they differ from your project) Existing projects include:
-## Sample1
-https://www.kaggle.com/ghenima/temperature-change-analysis-in-progress
-# This person did a forecast of temperature. We are going to use the indicators of different countires to predict the temperature change for individual countries
+## Benchmark. Existing projects include:
+## Sample 1[https://www.kaggle.com/ghenima/temperature-change-analysis-in-progress]
+This person did a forecast of temperature. We are going to use the indicators of different countires to predict the temperature change for individual countries
 
-## Sample2
-https://www.kaggle.com/gatandubuc/forecast-with-n-beats-interpretable-model
-# This person also did a forecast of temperature. We are going to use neural networks to make a better forecast for global warming across all countries globally
+## Sample 2[https://www.kaggle.com/gatandubuc/forecast-with-n-beats-interpretable-model]
+This person also did a forecast of temperature. We are going to use neural networks to make a better forecast for global warming across all countries globally
 
 ## Proposed Model/Algorithm
 # We will combine 2 datasets. One for indicator of countries, other one for temperature change. 
