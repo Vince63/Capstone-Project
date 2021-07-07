@@ -7,7 +7,7 @@
 ## Data
 [Dataset with indicators of world countries](https://www.kaggle.com/ploverbrown/world-bank-indicators-collection)
 
-[Dataset with temperature changes of different countries](https://www.kaggle.com/sevgisarac/temperature-change)
+[Dataset with temperature changes of world countries](https://www.kaggle.com/sevgisarac/temperature-change)
 
 ## Importance of data
 ### To be able to predict the global (and domestic!) warming by the following indicators:
