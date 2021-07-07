@@ -1,6 +1,6 @@
 # Random-Variables.md
 
-## [Insert Project Topic Name]
+# Prediction of Global Warming through Analysis of Countries' Development Indicators
 
 ## Vincent Li, Innokentiy Kaurov, Henry Greenhut, Oliver Zhou, Krishna Suresh
 
