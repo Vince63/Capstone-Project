@@ -5,6 +5,11 @@
 ## Vincent Li, Innokentiy Kaurov, Henry Greenhut, Oliver Zhou, Krishna Suresh
 
 ## Data
+
+https://www.kaggle.com/theworldbank/world-bank-climate-change-data
+
+https://www.kaggle.com/ploverbrown/world-bank-indicators-collection
+
 ## (Explanation of Data: Include subject, size, variables ect...)
 
 ## (Importance of data: Include the goal of the project and its real world aplications).
