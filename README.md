@@ -5,19 +5,12 @@
 ## Vincent Li, Innokentiy Kaurov, Henry Greenhut, Oliver Zhou, Krishna Suresh
 
 ## Data
-https://www.kaggle.com/ploverbrown/world-bank-indicators-collection
+[Dataset with indicators of world countries](https://www.kaggle.com/ploverbrown/world-bank-indicators-collection)
 
-https://www.kaggle.com/sevgisarac/temperature-change
+[Dataset with temperature changes of different countries](https://www.kaggle.com/sevgisarac/temperature-change)
 
-## (Explanation of Data: Include subject, size, variables ect...)
-### Dataset 1 
--Subject: Dataset with indicators of world countries.
-
-### Dataset 2
--Subject: Temperature change of different countries
-
-## (Importance of data: Include the goal of the project and its real world aplications).
-# To be able to predict the global warming by indicators of countries
+## Importance of data
+### To be able to predict the global (and domestic!) warming by the following indicators:
 - Infrastructure
 - Economic Growth
 - Trade
@@ -30,6 +23,6 @@ This person did a forecast of temperature. We are going to use the indicators of
 This person also did a forecast of temperature. We are going to use neural networks to make a better forecast for global warming across all countries globally
 
 ## Proposed Model/Algorithm
-# We will combine 2 datasets. One for indicator of countries, other one for temperature change. 
+We will combine 2 datasets. One for indicator of countries, other one for temperature change. 
 
-## (Create a diagram to demonstrate how the project code works)
+## Diagram: coming soon...
