@@ -16,10 +16,10 @@
 - Trade
 - Poverty
 ## Benchmark. Existing projects include:
-## Sample 1[https://www.kaggle.com/ghenima/temperature-change-analysis-in-progress]
+## [Sample 1](https://www.kaggle.com/ghenima/temperature-change-analysis-in-progress)
 This person did a forecast of temperature. We are going to use the indicators of different countires to predict the temperature change for individual countries
 
-## Sample 2[https://www.kaggle.com/gatandubuc/forecast-with-n-beats-interpretable-model]
+## [Sample 2](https://www.kaggle.com/gatandubuc/forecast-with-n-beats-interpretable-model)
 This person also did a forecast of temperature. We are going to use neural networks to make a better forecast for global warming across all countries globally
 
 ## Proposed Model/Algorithm
