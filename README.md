@@ -18,11 +18,10 @@ https://www.kaggle.com/sevgisarac/temperature-change
 
 ## (Importance of data: Include the goal of the project and its real world aplications).
 # To be able to predict the global warming by indicators of countries
--Infrastructure
--Economic Growth
--Trade
--Poverty
--
+- Infrastructure
+- Economic Growth
+- Trade
+- Poverty
 ## Benchmark
 ## (Explain any similar projects that already exist, as well as ways they differ from your project) Existing projects include:
 ## Sample1
