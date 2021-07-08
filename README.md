@@ -1,6 +1,6 @@
 ### Random-Variables.md
 
-# Prediction of Greenhouse Emissions through Analysis of Countries' Development Indicators
+# Prediction of Greenhouse Emissions by Countries' Development Indicators
 
 ## Vincent Li, Innokentiy Kaurov, Henry Greenhut, Oliver Zhou, Krishna Suresh
 
