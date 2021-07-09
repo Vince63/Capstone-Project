@@ -2,20 +2,28 @@ install.packages("readxl")
 
 library("readxl")
 
- 
+# In this experiment, we tried to predict the CO2 gas emissions (in kilotonnes, kt) in every single country by analysing the following indicators:
+# - Population
+# - Access to Electricity (% of population)
+# - Forest Area (in km^2)
+# - Agricultural Land (in km^2)
 
- 
+# The data used was taken from years 2010-13.
 
- 
+# The predictions were made using the Linear Regression model.
+# The model learned from the indicators (the explanatory variables) to predict the CO2 emissions (the response variable).
+# For calculating the error of the model, we decided to use Mean Absolute Error (MAE) instead of Mean Squared Error (MSE),
+# because we think it provides a clearer representation of the algorithm's accuracy compared to the original data.
+# Credits to Prof. Yin for the original version of the Linear Regression algorithm.
 
- 
 
- 
+# Import data
+dta = as.data.frame(read_excel("..."))
 
-dta = as.data.frame(read_excel("C:/Users/Lyudmila/Desktop/ClimateCapstone.xlsx"))
-
+# This vector stores which rows from the data must be kept for every country (by rows' indices)
 rowkeep = c(4, 45, 62, 68, 0)
 
+# The FOR loop below expands the list of rows that must be kept, considering every single country.
 keep = c()
 
 for (i in 1:20064){
@@ -26,22 +34,22 @@ for (i in 1:20064){
 
 }
 
+#Update data: remove unnecessary rows
 newdta = dta[keep, ]
 
+# Reset indexation
 row.names(newdta) = NULL
 
-# Every 5th row is the data for greenhouse emissions (what we are predicting)
+# Now, every 2nd row out of 5 is the data for greenhouse emissions (what we are predicting)
 
- 
-
+# Initialise empty dataframe that will store all the needed stats.
 dta1 = data.frame()
 
- 
-
+# The FOR loop below goes through every year from 2010 to 2013 and adds the data for each indicator into the main dataframe "dta1".
 for (i in 2010:2013){
 
   year = as.character(i)
-
+  
   GasEmissions = newdta[rep(0:263) * 5 + 2, year]
 
   Population = newdta[rep(0:263) * 5 + 1, year]
@@ -51,6 +59,8 @@ for (i in 2010:2013){
   ForestArea = newdta[rep(0:263) * 5 + 4, year]
 
   AgriculturalLand = newdta[rep(0:263) * 5 + 5, year]
+ 
+  # Gas emissions column is now placed first.
 
   dta2 = data.frame(
 
@@ -70,7 +80,7 @@ for (i in 2010:2013){
 
 }
 
- 
+# The Linear Regression algorithm
 
 LinearRegression = function(
 
@@ -131,6 +141,8 @@ LinearRegression = function(
   # Make prediction on training:
 
   preds.train.prob <- predict(model, train.x)
+ 
+  # The following FOR loop computes the MAE, omitting any NA entries.
 
   train.dif = 0
 
@@ -158,7 +170,7 @@ LinearRegression = function(
 
   preds.prob <- predict(model, test.x)
 
-  test.mae <- sum(abs(preds.prob - test.y))/nrow(test)
+  # The following FOR loop computes the MAE, omitting any NA entries.
 
   test.dif = 0
 
@@ -212,15 +224,14 @@ LinearRegression = function(
 
 }
 
- 
+# Shuffle the data, setting a custom seed for reproducibility 
 
 set.seed(40)
 
 dta1 = dta1[sample(nrow(dta1)), ]
 
- 
-
- 
+# Run the algorithm, taking the 1st column (Gas Emissions) as Y, and all other columns as X.
+# Cutoff is 95%.
 
 results = LinearRegression(
 
@@ -232,10 +243,13 @@ results = LinearRegression(
 
 )
 
- 
-
 print(results$Train.MAE)
 
 print(results$Test.MAE)
 
 plot(results$Truth_and_Predicted)
+
+# After running the whole program, we get the following output:
+# Train MAE = 745128 kt
+# Test MAE = 773731 kt
+# The plot of predicted data against true data can be found in the file "CO2-Emissions-Prediction.jpeg", located in the same "Scripts" folder.
