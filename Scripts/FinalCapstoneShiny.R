@@ -167,53 +167,6 @@ plot(Country_Predicted_Results[[country]],
      )
 lines(Country_True_Results[[country]], type = 'l', col = "blue", lwd = 3)
 
-# List of tested countries:
-# [1] "Virgin Islands (U.S.)"
-# [1] "Uzbekistan"
-# [1] "Comoros"
-# [1] "Singapore"
-# [1] "Mali"
-# [1] "Ghana"
-# [1] "France"
-# [1] "Rwanda"
-# [1] "Bahamas, The"
-# [1] "Cyprus"
-# [1] "Sint Maarten (Dutch part)"
-# [1] "Central African Republic"
-# [1] "Latvia"
-# [1] "Benin"
-# [1] "Sao Tome and Principe"
-# [1] "Papua New Guinea"
-# [1] "Vanuatu"
-# [1] "Lebanon"
-# [1] "IDA only"
-# [1] "Azerbaijan"
-# [1] "Grenada"
-# [1] "Georgia"
-# [1] "Vietnam"
-# [1] "Guinea"
-# [1] "Guyana"
-# [1] "Haiti"
-# [1] "Portugal"
-# [1] "Channel Islands"
-# [1] "Aruba"
-# [1] "Colombia"
-# [1] "Bermuda"
-# [1] "Cuba"
-# [1] "Cabo Verde"
-# [1] "Nicaragua"
-# [1] "Kiribati"
-# [1] "Montenegro"
-# [1] "Poland"
-# [1] "Lesotho"
-# [1] "Turks and Caicos Islands"
-# [1] "Brunei Darussalam"
-
-
-
-
-
-
 
 #################### SHINY APP ####################
 library("shiny")
