@@ -10,11 +10,11 @@
 
 ## Importance of data
 ### To be able to predict the global and domestic greenhouse emissions by such indicators as:
-- Population (Urban & Rural)
+- Population
 - Agriculture
 - Forested Area
-- Energy use
-- Natural disasters
+- Energy Use
+- Access to Electricity
 ## Benchmark. Existing projects include:
 ### [Sample 1](https://www.kaggle.com/ghenima/temperature-change-analysis-in-progress)
 This person did a forecast of temperature. We are going to use World Bank indicators to predict the greenhouse emissions in individual areas.
