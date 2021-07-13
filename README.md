@@ -23,6 +23,8 @@ This person did a forecast of temperature. We are going to use World Bank indica
 This person also did a forecast of temperature. We are going to use neural networks to make more accurate forecasts of global warming.
 ## Proposed Model/Algorithm
 We will try to build a model that predicts the global and domestic greenhouse gas emissions, using the "Climate Change" dataset, produced by World Bank. We will then assess the accuracy of the model by comparing the results to the actual values.
+
+
 **The Approach.** In the second method we will try to come up with a linear formula to forecast the future greenhouse emissions based on the 
 countries' World Bank indicators. This approach will use machine learning, in particular the Linear Regression algorithm.
 For this approach, we will only work with data over 1 year (e.g. 2019). Unlike the first model, this algorithm will not consider data from previous years, 
