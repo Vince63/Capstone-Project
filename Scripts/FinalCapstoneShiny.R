@@ -151,23 +151,6 @@ for (year in 2000:2013){
 Resultant_MAE = mean(MMAE, na.rm = 1)
 print(Resultant_MAE)
 
-# Testing the plots
-
-country = "Vietnam"
-
-pred = Country_Predicted_Results[[country]]$CO2_Emissions
-actual = Country_True_Results[[country]]$CO2_Emissions
-
-plot(Country_Predicted_Results[[country]],
-     type = 'l', col = "red", lwd = 3,
-     ylab = "CO2 Emissions (kt)",
-     ylim = c(0, max(max(pred, na.rm = 1), max(actual, na.rm = 1))),
-     main = paste("Results for: ", country),
-     sub = paste("Mean Absolute Percentage Error: ", mean(abs(pred - actual) / actual, na.rm = 1) * 100, "%.")
-     )
-lines(Country_True_Results[[country]], type = 'l', col = "blue", lwd = 3)
-
-
 #################### SHINY APP ####################
 library("shiny")
 
