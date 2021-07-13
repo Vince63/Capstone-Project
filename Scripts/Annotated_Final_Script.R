@@ -1,6 +1,6 @@
 # Import the data
 library("readxl")
-dta = as.data.frame(read_excel("C:/Users/Lyudmila/Desktop/ClimateCapstone.xlsx"))
+dta = as.data.frame(read_excel("..."))
 # The vector "rowkeep" stores the indices of the needed rows
 rowkeep = c(4, 45, 50, 62, 68, 0)
 keep = c()
