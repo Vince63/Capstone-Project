@@ -1,5 +1,5 @@
 library("readxl")
-dta = as.data.frame(read_excel("C:/Users/Lyudmila/Desktop/ClimateCapstone.xlsx"))
+dta = as.data.frame(read_excel("..."))
 rowkeep = c(4, 45, 50, 62, 68, 0)
 keep = c()
 for (i in 1:20064){
